@@ -568,6 +568,8 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:
                                                                                      forIndexPath:indexPath];
         UIViewController *vc = [self viewControllerAtIndex:indexPath.row];
         segmentBarItem.titleLabel.text = vc.title;
+        if(self.segmentTitleFont) segmentBarItem.titleLabel.font = self.segmentTitleFont;
+        if(self.segmentTitleColor) segmentBarItem.titleLabel.textColor = self.segmentTitleColor;
         return segmentBarItem;
     }
     // slide

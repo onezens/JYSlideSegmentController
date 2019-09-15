@@ -94,6 +94,8 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
 @property (nonatomic, assign) CGFloat segmentWidth;
 @property (nonatomic, assign) CGFloat segmentHeight;
 @property (nonatomic, assign) UIEdgeInsets segmentInsets; // segmentBar layout sectionInset
+@property (nonatomic, strong) UIColor *segmentTitleColor;
+@property (nonatomic, strong) UIFont *segmentTitleFont;
 
 /**
  The segmentBar position in container. Default is JYSlideSegmentBarPositionTop.
